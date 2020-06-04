@@ -9,10 +9,9 @@ Se están acumulando la información que da la Municipalidad de La Plata en su i
 - Exportando a HTML con nbconvert.
 - Se puede ver el html en [covid19_laplata/](https://jonathanloscalzo.github.io/covid19_laplata/)
 ```bash
-python src/data/download_csv.py
-python src/data/exec_notebook.py
-jupyter nbconvert notebooks/00-viz_casos-output.ipynb --to html --no-input --output ../index.html
-rm notebooks/00-viz_casos-output.ipynb
+python3 ./deploy.py
+jupyter nbconvert ./notebooks/00-viz_casos-output.ipynb --to html --no-input --output ../index.html
+rm ./notebooks/00-viz_casos-output.ipynb
 ```
 
 ## TODOs
